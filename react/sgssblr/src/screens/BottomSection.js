@@ -101,7 +101,7 @@ export default class BottomSection extends React.Component {
                                 <p>Copyright &copy; 2019 Official Website of Sri Guru Singh Sabha, Bengaluru</p>
                             </div>
                             <div style={{ flex: 1, minWidth: 300 }}>
-                                Designed by: &nbsp;&nbsp;<a target="_blank" href="https://www.heloprotocol.in/" style={{color: '#fff', textDecoration: 'none'}}>Helo</a>
+                                Designed by: &nbsp;&nbsp;<a target="_blank" href="https://liquidco.in/" style={{color: '#fff', textDecoration: 'none'}}>Liquid</a>
                             </div>
                             <div style={{ flex: 1, minWidth: 300 }}>
                                 Reference & Credit: &nbsp;&nbsp;<a target="_blank" href="http://www.dsgmc.in/" style={{color: '#fff', textDecoration: 'none'}}>DSGMC</a>
