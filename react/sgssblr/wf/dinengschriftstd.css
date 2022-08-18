@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'DIN1451StdEngschrift';
+    src: url('dinengschriftstd.eot');
+    src: url('dinengschriftstd.eot') format('embedded-opentype'),
+         url('dinengschriftstd.woff') format('woff'),
+         url('dinengschriftstd.ttf') format('truetype'),
+         url('dinengschriftstd.svg#DIN1451StdEngschrift') format('svg');
+}
+.font1
+{
+	font-family:DIN1451StdEngschrift;
+	font-size:24px;
+	color:#7f8baf;
+	text-transform:uppercase;
+}
+.font2
+{
+	font-family:DIN1451StdEngschrift;
+	font-size:36px;
+	color:#082f50;
+	text-transform:uppercase;
+}
+.font3
+{
+	font-family: 'DIN1451StdEngschrift';
+	font-size:24px;
+	color:#ffcc00;
+	text-transform:uppercase;
+}
+

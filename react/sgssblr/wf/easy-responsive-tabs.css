@@ -1,0 +1,144 @@
+ul.resp-tabs-list, p {
+	margin: 0px;
+	padding: 0px;
+}
+.resp-tabs-list li {
+	font-size: 16px;
+	display: inline-block;
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 10px 15px;
+	margin-right:10px;
+	list-style: none;
+	cursor: pointer;
+	float: left;
+	text-align:justify;
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-top-left-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border-top-right-radius: 10px;
+	color:#fff;
+	background-color:#232323;
+	font-family:"PT Sans", sans-serif;
+}
+.resp-tabs-container {
+	padding: 0px;
+	clear: left;
+	font-size:13px;
+	line-height:20px;
+	background: #efefef;
+	color:#666;
+	font-family:"PT Sans", sans-serif;
+	font-size:16px;
+	text-align:justify;
+}
+h2.resp-accordion {
+	cursor: pointer;
+	padding: 5px;
+	display: none;
+}
+.resp-tab-content {
+	display: none;
+	padding: 15px;
+}
+.resp-tab-active {
+	border-bottom: none;
+	margin-bottom: -1px !important;
+	padding: 10px 14px 10px 14px !important;
+	background-color:#e1e1e1!important;
+}
+.resp-tab-active {
+	border-bottom: none;
+	background-color:#ffc8bf;
+	font-family:"PT Sans", sans-serif;
+	color: #000 !important;
+	font-size: 16px !important;
+}
+.resp-content-active, .resp-accordion-active {
+	display: block;
+}
+.resp-tab-content {
+	border: 1px solid #e1e1e1;
+}
+h2.resp-accordion {
+	font-size: 13px;
+	border: 1px solid #c1c1c1;
+	border-top: 0px solid #c1c1c1;
+	margin: 0px;
+	padding: 10px 15px;
+}
+h2.resp-tab-active {
+	border-bottom: 0px solid #c1c1c1 !important;
+	margin-bottom: 0px !important;
+	padding: 10px 15px !important;
+}
+h2.resp-tab-title:last-child {
+	border-bottom: 12px solid #c1c1c1 !important;
+	background: blue;
+}
+/*-----------Accordion styles-----------*/
+h2.resp-tab-active {
+	background: #DBDBDB !important;
+}
+.resp-easy-accordion h2.resp-accordion {
+	display: block;
+}
+.resp-easy-accordion .resp-tab-content {
+	border: 1px solid #c1c1c1;
+}
+.resp-easy-accordion .resp-tab-content:last-child {
+	border-bottom: 1px solid #c1c1c1 !important;
+}
+.resp-jfit {
+	width: 100%;
+	margin: 0px;
+}
+.resp-tab-content-active {
+	display: block;
+}
+h2.resp-accordion:first-child {
+	border-top: 1px solid #c1c1c1 !important;
+}
+
+/*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
+@media only screen and (max-width: 768px) {
+ ul.resp-tabs-list {
+ display: none;
+}
+ h2.resp-accordion {
+ display: block;
+ color:#000000;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ background: #eeeeee; /* Old browsers */
+background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* IE10+ */
+background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc', GradientType=0 ); /* IE6-9 */
+}
+ .resp-vtabs .resp-tab-content {
+ border: 1px solid #C1C1C1;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ line-height:20px;
+ color:#000000;
+}
+ .resp-vtabs .resp-tabs-container {
+ border: none;
+ float: none;
+ width: 100%;
+ min-height: initial;
+ clear: none;
+}
+ .resp-accordion-closed {
+ display:none !important;
+}
+ .resp-vtabs .resp-tab-content:last-child {
+ border-bottom: 1px solid #c1c1c1 !important;
+}
+}
+
