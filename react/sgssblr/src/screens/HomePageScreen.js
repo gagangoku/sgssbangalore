@@ -608,7 +608,7 @@ const OPENING_PHOTOS = [
     'https://images-lb.heloprotocol.in/Slide6.JPG-126913-203374-1607335134599.jpeg',
 ];
 const PHOTOS = [
-    ...OPENING_PHOTOS,
+//    ...OPENING_PHOTOS,
     '/images/gur-1.jpg',
     '/images/gur-2.jpg',
     '/images/gur-3.jpg',
