@@ -29,7 +29,9 @@ class StepUpcoming extends React.Component {
     }
 
     render() {
-        return (<img src="/images/gurpurab-2020.png" style={{ maxWidth: '100%', height: window.innerHeight }} />);
+        const imgSrc = 'https://raw.githubusercontent.com/gagangoku/sgssbangalore/main/react/sgssblr/images/SGSS_Gurpurab_Schedule_2022-23.jpeg';
+//        const imgSrc = '/images/SGSS_Gurpurab_Schedule_2022-23.jpeg';
+        return (<img src={imgSrc} style={{ width: Math.min(window.innerWidth, 600) }} />);
     }
 }
 

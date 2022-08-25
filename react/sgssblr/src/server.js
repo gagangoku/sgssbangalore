@@ -83,7 +83,7 @@ const renderFullPage = (data, helmet, html, preloadedState) => {
                 ${helmet.style.toString()}
                 ${helmet.script.toString()}
             
-                <meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+                <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=12.0, minimum-scale=.25, user-scalable=yes"/>
                 <link rel="icon" href="/images/Khanda.svg.png" type="image/png" />
                 <meta name="google" value="notranslate" content="notranslate" />
 
