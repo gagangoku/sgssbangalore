@@ -48,7 +48,7 @@ spec:
       - gurdwara.helojobs.in
       - gurdwara.liquidco.in
       - gurdwara.supergroup.ai
-      secretName: secret-sgssbangalore-20221220
+      secretName: secret/secret-liquidco-20220714
   ingressClassName: nginx
   rules:
     - host: gurdwara.helojobs.in
