@@ -1,26 +1,26 @@
-kind: Deployment
-apiVersion: apps/v1
-metadata:
-  name: sgssbangalore
-  labels:
-    app: sgssbangalore
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: sgssbangalore
-  template:
-    metadata:
-      labels:
-        app: sgssbangalore
-    spec:
-      containers:
-        - name: sgssbangalore
-          image: gcr.io/GOOGLE_CLOUD_PROJECT/sgssbangalore-cloudbuild:COMMIT_SHA
-          ports:
-            - containerPort: 8095
-              protocol: TCP
----
+# kind: Deployment
+# apiVersion: apps/v1
+# metadata:
+#   name: sgssbangalore
+#   labels:
+#     app: sgssbangalore
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       app: sgssbangalore
+#   template:
+#     metadata:
+#       labels:
+#         app: sgssbangalore
+#     spec:
+#       containers:
+#         - name: sgssbangalore
+#           image: gcr.io/GOOGLE_CLOUD_PROJECT/sgssbangalore-cloudbuild:COMMIT_SHA
+#           ports:
+#             - containerPort: 8095
+#               protocol: TCP
+# ---
 kind: Service
 apiVersion: v1
 metadata:
@@ -47,7 +47,6 @@ spec:
     - hosts:
       - gurdwara.helojobs.in
       - gurdwara.liquidco.in
-      - gurdwara.supergroup.ai
       secretName: secret-liquidco-20220714
   ingressClassName: nginx
   rules:
@@ -71,6 +70,18 @@ spec:
                 name: sgssbangalore
                 port:
                   number: 80
+---
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: sgssbangalore-ingress-sg
+spec:
+  tls:
+    - hosts:
+      - gurdwara.supergroup.ai
+      secretName: secret-supergroup-20221220
+  ingressClassName: nginx
+  rules:
     - host: gurdwara.supergroup.ai
       http:
         paths:
