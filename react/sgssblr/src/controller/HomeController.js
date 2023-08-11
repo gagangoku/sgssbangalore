@@ -30,8 +30,13 @@ class StepUpcoming extends React.Component {
 
     render() {
         const imgSrc = 'https://raw.githubusercontent.com/gagangoku/sgssbangalore/main/react/sgssblr/images/SGSS_Gurpurab_Schedule_2022-23.jpeg';
-//        const imgSrc = '/images/SGSS_Gurpurab_Schedule_2022-23.jpeg';
-        return (<img src={imgSrc} style={{ width: Math.min(window.innerWidth, 600) }} />);
+        const elecSchedule = 'https://raw.githubusercontent.com/gagangoku/sgssbangalore/main/react/sgssblr/images/SGSS_ELECTION_SCHEDULE.pdf';
+        return (
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                <a href={elecSchedule} style={{ marginTop: 20 }}>Upcoming election schedule - 27 Aug, 2023</a>
+                <img src={imgSrc} style={{ width: Math.min(window.innerWidth, 600) }} />
+            </div>
+        );
     }
 }
 
